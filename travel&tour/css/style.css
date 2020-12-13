@@ -1,0 +1,159 @@
+/*style of menu*/
+.menu {
+	background-color: #810000;
+}
+.bg-light {
+	background-color: #810000 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #f00;
+}
+.navbar {
+	padding: 18px;
+}
+/*style of slider*/
+.nopadding {
+	padding: 0px;
+}
+/*style of popular desti section*/
+.popular-desti {
+	background-color: #810000;
+	font-family: "PT Sans", sans-serif;
+}
+.popular-desti h3 {
+	font-size: 22px;
+	font-weight: bold;
+}
+.popular-desti h4 {
+	font-size: 22px;
+}
+/* desti img hover effect bootstrap*/
+.hovereffect {
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+	background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+}
+
+.hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding: 3em;
+	text-align: left;
+}
+
+.hovereffect img {
+	display: block;
+	position: relative;
+	max-width: none;
+	width: calc(100% + 60px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	-webkit-transform: translate3d(-40px, 0, 0);
+	transform: translate3d(-40px, 0, 0);
+}
+
+.hovereffect h2 {
+	text-transform: uppercase;
+	color: #fff;
+	position: relative;
+	font-size: 17px;
+	background-color: transparent;
+	padding: 15% 0 10px 0;
+	text-align: left;
+}
+
+.hovereffect .overlay:before {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	left: 20px;
+	border: 1px solid #fff;
+	content: "";
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	-webkit-transform: translate3d(-20px, 0, 0);
+	transform: translate3d(-20px, 0, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+	color: #fff;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	-webkit-transform: translate3d(-10px, 0, 0);
+	transform: translate3d(-10px, 0, 0);
+}
+
+.hovereffect:hover img {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a,
+.hovereffect:hover p {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+/* style of trip record*/
+.trip-record {
+	background-color: #000;
+	font-family: "PT Sans", sans-serif;
+}
+.trip-record h2 {
+	font-size: 24px;
+}
+/*top-desti*/
+.top-desti {
+	background-color: #013e74;
+}
+/*style of contact*/
+.contact {
+	background: url(../img/hotel-soelden-hallenbad-slider.jpg);
+	opacity: 0.9;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contact h2 {
+	font-size: 30px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: bold;
+}
+/*style of footer*/
+.footer {
+	background-color: #000;
+	font-family: "PT Sans", sans-serif;
+}
+.footer h5 {
+	font-weight: bold;
+}
+/* style of copyright*/
+.copyright {
+	background-color: #810000;
+	font-family: "PT Sans", sans-serif;
+}
