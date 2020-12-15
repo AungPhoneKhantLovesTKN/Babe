@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lipsticks</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+		<!-- ********Linking fonts form Google Fonts******** -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/lightslider.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/lightslider.js"></script>
+	</head>
+	
+		<!-- Header Section -->
+		<header class="mb-1">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<!-- Clickable Free Shipping -->
+					<ul class="navbar-nav nav-list">
+						<li class="nav-item">
+							<a href="#" class="nav-link"> Free Shipping </a>
+						</li>
+					</ul>
+					<div class="custom-div">
+						<!-- Adding Logo Image -->
+						<div>
+							<img
+								src="img/lipsticks.jpg"
+								alt="logo"
+								width="150px"
+								height="80px"
+							/>
+						</div>
+						<!-- Adding Brand Title -->
+						<h1>the best red lipsticks</h1>
+					</div>
+					<!-- Clickable Account and My Cart -->
+					<ul class="navbar-nav nav-list">
+						<li class="nav-item">
+							<a href="#" class="nav-link"> Account </a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"
+								><i class="fas fa-shopping-cart"></i> my cart
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header> 
+		<!-- Header Section Ends -->
+
+		<!-- Menu Section  -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<ul class="navbar-nav" id="navigation">
+					<li class="nav-item">
+						<a href="#" class="nav-link">sale</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  shop <i class="fas fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item" href="#">Thin Kyar Ngone</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="#">lay ko</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="#">chit tl.</a></li>
+						</ul>
+					  </li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">best sellers</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">new</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">back in stock</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a href="#" class="nav-link">search here</a>
+					</li> -->
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="SEARCH HERE" aria-label="Search">
+					<button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
+				  </form>
+			</div>
+		</nav>
+		
+		<!-- Sliding Images Section -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+			  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+			  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="img/jumbotron1.jpg" class="d-block w-100" alt="jumbotron1" height="768px">
+			  </div>
+			  <div class="carousel-item">
+				<img src="img/jumbotron2.jpg" class="d-block w-100" alt="jumbotron2" height="768px">
+			  </div>
+			  <div class="carousel-item">
+				<img src="img/jumbotron3.jpg" class="d-block w-100" alt="jumbotron3" height="768px">
+			  </div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</a>
+		</div>
+		<!-- Sliding Image Ends -->
+
+		<!-- Best Seller Slider Section -->
+
+		<!-- Best Seller Title -->
+		<div class="best-seller bsh-bg">
+			<h1 class="text-center py-3">Best Sellers</h1>
+		</div>
+
+		<!-- Best Seller Slider -->
+		<div class="custom-container">
+			<ul id="autoWidth" class="cs-hidden">
+				<li class="item-a">
+					<div class="bs-box">
+						<div class="bs-photo-left">
+								<img src="img/lipstick.jpg" alt="">
+						</div>
+						<p class="mt-3">charlotte tilbury matte revolution lipstick</p>
+						<a href="#">
+							<div class="cart-btn mt-2">
+								Add to Cart $24
+							</div>
+						</a>
+						
+					</div>
+				</li>
+				<li class="item-b">
+					<div class="bs-box">
+						<div class="bs-photo-right">
+							<img src="img/lipstick.jpg" alt="">
+						</div>
+						<p class="mt-3">charlotte tilbury matte revolution lipstick</p>
+						<a href="#">
+							<div class="cart-btn mt-2">
+								Add to Cart $24
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="item-c">
+					<div class="bs-box">
+						<div class="bs-photo-left">
+							<img src="img/lipstick.jpg" alt="">
+						</div>
+						<p class="mt-3">charlotte tilbury matte revolution lipstick</p>
+						<a href="#">
+							<div class="cart-btn mt-2">
+								Add to Cart $24
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="item-d">
+					<div class="bs-box">
+						<div class="bs-photo-right">
+							<img src="img/lipstick.jpg" alt="">
+						</div>
+						<p class="mt-3">charlotte tilbury matte revolution lipstick</p>
+						<a href="#">
+							<div class="cart-btn mt-2">
+								Add to Cart $24
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="item-e">
+					<div class="bs-box">
+						<div class="bs-photo-left">
+							<img src="img/lipstick.jpg" alt="">
+						</div>
+						<p class="mt-3">charlotte tilbury matte revolution lipstick</p>
+						<a href="#">
+							<div class="cart-btn mt-2">
+								Add to Cart $24
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="item-f">
+					<div class="bs-box">
+						<div class="bs-photo-right">
+							<img src="img/lipstick.jpg" alt="">
+						</div>
+						<p class="mt-3">charlotte tilbury matte revolution lipstick</p>
+						<a href="#">
+							<div class="cart-btn mt-2">
+								Add to Cart $24
+							</div>
+						</a>
+					</div>
+				</li>
+			  </ul>
+		</div>
+		<!-- Best Sellers Slider Section Ends -->
+		<script src="js/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
