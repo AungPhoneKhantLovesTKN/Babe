@@ -1,3 +1,7 @@
+a {
+	text-decoration: none;
+}
+
 /* Setting Background Color for Navigation Bar */
 #header-bg {
 	background-color: #f5f5f5;
@@ -70,6 +74,7 @@ form.d-flex {
 }
 /* Formatting Search Here Ends */
 
+/* **********Styling Best Seller Slider**************  */
 .best-seller h1 {
 	color: #a71308;
 	text-transform: uppercase;
@@ -79,12 +84,11 @@ form.d-flex {
 .custom-container {
 	max-width: 1320px;
 	margin: 0 auto;
-	/* outline: 1px solid red; */
 }
 
+/* bs = "best seller" */
 .bs-box {
 	width: 302px;
-	/* outline: 1px solid red; */
 	margin: 0 10px;
 	display: flex;
 	flex-direction: column;
@@ -124,12 +128,13 @@ p.mt-3 {
 	text-align: center;
 }
 .cart-btn {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	text-transform: uppercase;
+	padding: 10px 0;
 	background-color: #000000;
 	color: #f7f7f7;
 	text-align: center;
 	font-weight: 400;
+	box-shadow: 0px 1px 5px #000000;
 }
 .bs-box a {
 	text-decoration: none;
@@ -142,3 +147,49 @@ p.mt-3 {
 .bsh-bg {
 	background-color: #f5f5f5;
 }
+/* **********Styling Best Seller Slider Ends**************  */
+
+/* **********Styling Main Items Slider**************  */
+a.carousel-control-prev i {
+	color: black;
+	font-size: 1.5em;
+}
+
+a.carousel-control-next i {
+	color: black;
+	font-size: 1.5em;
+}
+
+/* mi = "main items" */
+.mi-slider-control .carousel-control-next,
+.mi-slider-control .carousel-control-prev {
+	position: relative;
+}
+
+.mi-slider-control {
+	display: flex;
+	justify-content: center;
+}
+
+.mi-photo {
+	height: 300px;
+	box-shadow: 20px 3px 6px #a71308;
+}
+
+.mi-photo img {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 1px 10px #a71308;
+}
+
+.mi-card p {
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+	margin-bottom: 0;
+}
+
+.mi-card a:hover .cart-btn {
+	color: yellow;
+}
+/* **********Styling Main Items Slider Ends**************  */
