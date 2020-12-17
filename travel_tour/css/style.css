@@ -282,6 +282,9 @@
 		-ms-flex-preferred-size: auto;
 		flex-basis: auto;
 	}
+	ul.navbar-nav li.nav-item a.nav-link {
+		text-align: center;
+	}
 }
 @media (max-width: 992px) {
 	.navbar-nav {
