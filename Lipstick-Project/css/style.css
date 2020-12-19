@@ -172,7 +172,10 @@ p.mt-4 {
 	text-decoration: none;
 }
 .bs-box a:hover .cart-btn {
-	color: yellow;
+	background-color: #f7f7f7;
+	font-weight: 400;
+	color: #000000;
+	border: 2px solid black;
 }
 
 /* Best Seller Heading Background */
@@ -207,6 +210,10 @@ a.carousel-control-next i {
 	justify-content: center;
 }
 
+.ni-card {
+	height: 441px;
+}
+
 .ni-photo {
 	width: 283px;
 	height: 313px;
@@ -229,7 +236,11 @@ a.carousel-control-next i {
 }
 
 .ni-card a:hover .cart-btn {
-	color: yellow;
+	background-color: #f7f7f7;
+	font-weight: 400;
+	color: #000000;
+	box-sizing: border-box;
+	border: 2px solid black;
 }
 /* **********Styling New Items Slider Ends**************  */
 
@@ -281,6 +292,9 @@ a.carousel-control-next i {
 	font-family: "Libre Baskerville", serif;
 }
 
+.moist-card {
+	height: 441px;
+}
 .moist-photo {
 	height: 300px;
 	box-shadow: -20px -20px 5px #a71308;
@@ -300,7 +314,10 @@ a.carousel-control-next i {
 }
 
 .moist-card a:hover .cart-btn {
-	color: yellow;
+	background-color: #f7f7f7;
+	font-weight: 400;
+	color: #000000;
+	border: 2px solid black;
 }
 
 .see-more-btn a {
