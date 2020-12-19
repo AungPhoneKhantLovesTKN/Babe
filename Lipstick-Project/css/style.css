@@ -176,6 +176,7 @@ p.mt-4 {
 	font-weight: 400;
 	color: #000000;
 	border: 2px solid black;
+	padding: 8px 0;
 }
 
 /* Best Seller Heading Background */
@@ -211,7 +212,7 @@ a.carousel-control-next i {
 }
 
 .ni-card {
-	height: 441px;
+	height: 440px;
 }
 
 .ni-photo {
@@ -241,6 +242,7 @@ a.carousel-control-next i {
 	color: #000000;
 	box-sizing: border-box;
 	border: 2px solid black;
+	padding: 8px 0px;
 }
 /* **********Styling New Items Slider Ends**************  */
 
@@ -293,7 +295,7 @@ a.carousel-control-next i {
 }
 
 .moist-card {
-	height: 441px;
+	height: 440px;
 }
 .moist-photo {
 	height: 300px;
@@ -318,6 +320,7 @@ a.carousel-control-next i {
 	font-weight: 400;
 	color: #000000;
 	border: 2px solid black;
+	padding: 8px 0;
 }
 
 .see-more-btn a {
