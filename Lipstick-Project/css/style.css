@@ -1,5 +1,17 @@
+/* Removing Default Styling */
 a {
 	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+/* No padding */
+header .navbar {
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 /* Setting Background Color for Navigation Bar */
@@ -14,29 +26,53 @@ a {
 	grid-template-columns: auto auto;
 }
 
+/* Formatting Free Shipping */
+.free-shipping h5 {
+	font-size: 1.4vw;
+	font-family: "Franklin Gothic Medium", "Arial Narrow";
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.free-shipping h6 {
+	font-size: 0.9vw;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
 /* Formatting Brand Title */
-.custom-div h1 {
+.custom-div strong {
 	margin-bottom: 0;
 	align-self: center;
-	text-transform: uppercase;
-	color: #a71308;
-	font-size: 3vw;
 	margin-left: 20px;
-	font-family: "Noto Serif", serif;
+	font-family: Brush Script MT;
+	font-size: 3vw;
+	color: #a71308;
 }
 
-/* Formatting Link */
-.nav-list a {
-	font-size: 1.5vw;
-	color: #000000;
+/* ************* Formatting Link **************** */
+/* Account and My Cart Link */
+.navbar-light .acc-cart .nav-link {
+	color: #000;
+	font-size: 18px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow";
 	text-transform: uppercase;
-	font-family: "Titillium Web", sans-serif;
+}
+.navbar-light .acc-cart .nav-link:hover {
+	color: #a71308;
 }
 
-.nav-list a:hover {
-	text-shadow: 1px 1px 1px #222;
+/* Menu Links (eg.sale, shop, best seller etc..) */
+.navbar-light .menu-item .nav-link {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: black;
+	font-weight: 600;
+	font-family: "Libre Baskerville", serif;
 }
-/* Formattng Link Ends */
+.navbar-light .menu-item .nav-link:hover {
+	color: #a71308;
+}
+/* ****************** Formattng Link Ends ***************** */
 
 .navbar-nav {
 	flex-direction: row;
@@ -48,13 +84,7 @@ a {
 	justify-content: space-around;
 }
 
-/* Formatting Menu items */
-.navbar-light .navbar-nav .nav-link {
-	color: #000000;
-	text-transform: uppercase;
-}
-
-/* Formatting Dropdown icon */
+/* Formatting Dropdown icon next to the SHOP */
 .nav-link i {
 	margin-left: 3px;
 	font-size: 1.2em;
@@ -64,7 +94,6 @@ a {
 form.d-flex {
 	width: 400px;
 }
-
 .form-control:focus {
 	color: #212529;
 	background-color: #fff;
@@ -75,7 +104,7 @@ form.d-flex {
 /* Formatting Search Here Ends */
 
 /* **********Styling Best Seller Slider**************  */
-.best-seller h1 {
+.best-seller h2 {
 	color: #a71308;
 	text-transform: uppercase;
 	text-decoration: underline;
@@ -84,26 +113,28 @@ form.d-flex {
 .custom-container {
 	max-width: 1320px;
 	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 /* bs = "best seller" */
 .bs-box {
-	width: 302px;
-	margin: 0 10px;
+	width: 303px;
+	margin: 0 5px;
 	display: flex;
 	flex-direction: column;
 }
 
 .bs-photo-left {
-	width: 282px;
-	height: 300px;
+	width: 283px;
+	height: 290px;
 	margin-top: 20px;
 	box-shadow: -20px -20px 5px #a71308;
 	align-self: flex-end;
 }
 .bs-photo-right {
-	width: 282px;
-	height: 300px;
+	width: 283px;
+	height: 290px;
 	margin-top: 20px;
 	box-shadow: 20px -20px 5px #a71308;
 }
@@ -111,21 +142,21 @@ form.d-flex {
 .bs-photo-left img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 	box-shadow: 0px 1px 10px #a71308;
 }
 .bs-photo-right img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 	box-shadow: 0px 1px 10px #a71308;
 }
 
-p.mt-3 {
+p.mt-4 {
 	margin-bottom: 0;
 	text-transform: uppercase;
 	font-weight: 700;
+	font-size: 1em;
 	text-align: center;
+	font-family: "Libre Baskerville", serif;
 }
 .cart-btn {
 	text-transform: uppercase;
@@ -135,6 +166,7 @@ p.mt-3 {
 	text-align: center;
 	font-weight: 400;
 	box-shadow: 0px 1px 5px #000000;
+	font-family: "Libre Baskerville", serif;
 }
 .bs-box a {
 	text-decoration: none;
@@ -147,9 +179,13 @@ p.mt-3 {
 .bsh-bg {
 	background-color: #f5f5f5;
 }
+
+.bsh-bg h2 {
+	font-family: "Libre Baskerville", serif;
+}
 /* **********Styling Best Seller Slider Ends**************  */
 
-/* **********Styling Main Items Slider**************  */
+/* **********Styling New Items Slider**************  */
 a.carousel-control-prev i {
 	color: black;
 	font-size: 1.5em;
@@ -160,39 +196,42 @@ a.carousel-control-next i {
 	font-size: 1.5em;
 }
 
-/* mi = "main items" */
-.mi-slider-control .carousel-control-next,
-.mi-slider-control .carousel-control-prev {
+/* ni = "new items" */
+.ni-slider-control .carousel-control-next,
+.ni-slider-control .carousel-control-prev {
 	position: relative;
 }
 
-.mi-slider-control {
+.ni-slider-control {
 	display: flex;
 	justify-content: center;
 }
 
-.mi-photo {
-	height: 300px;
+.ni-photo {
+	width: 283px;
+	height: 313px;
 	box-shadow: 20px 3px 6px #a71308;
 }
 
-.mi-photo img {
+.ni-photo img {
 	width: 100%;
 	height: 100%;
 	box-shadow: 0px 1px 10px #a71308;
 }
 
-.mi-card p {
+.ni-card p {
 	text-align: center;
 	text-transform: uppercase;
 	color: black;
 	margin-bottom: 0;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
 }
 
-.mi-card a:hover .cart-btn {
+.ni-card a:hover .cart-btn {
 	color: yellow;
 }
-/* **********Styling Main Items Slider Ends**************  */
+/* **********Styling New Items Slider Ends**************  */
 
 /* ************* All Product Section ******************* */
 .moisturing-title {
@@ -202,6 +241,7 @@ a.carousel-control-next i {
 
 .moisturing-title h3 {
 	color: #a50e0e;
+	font-family: "Libre Baskerville", serif;
 	text-decoration: underline;
 	text-align: center;
 }
@@ -211,11 +251,12 @@ a.carousel-control-next i {
 }
 
 .side-menu div {
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .side-menu div a {
 	color: #cd0303;
+	font-family: "Libre Baskerville", serif;
 }
 
 .side-menu div a.active {
@@ -237,6 +278,7 @@ a.carousel-control-next i {
 	color: #a50e0e;
 	text-decoration: underline;
 	text-align: center;
+	font-family: "Libre Baskerville", serif;
 }
 
 .moist-photo {
@@ -251,9 +293,14 @@ a.carousel-control-next i {
 }
 
 .moist-card p {
+	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 0;
+}
+
+.moist-card a:hover .cart-btn {
+	color: yellow;
 }
 
 .see-more-btn a {
@@ -264,4 +311,118 @@ a.carousel-control-next i {
 	padding: 10px 10px;
 	text-decoration: underline;
 }
+
+.see-more-btn a:hover {
+	color: #a71308;
+}
 /* ************* All Product Section Ends ******************* */
+
+/*  ************* Footer Above Section *********************** */
+.footer-above-section-bg {
+	background-color: #000000;
+}
+.footer-above-photo {
+	width: 80%;
+	height: 150px;
+	margin: 0 auto;
+	box-shadow: 0px 1px 5px #ffffff;
+}
+
+.footer-above-photo img {
+	width: 100%;
+	height: 100%;
+}
+
+.footer-above-details {
+	text-align: center;
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
+	line-height: 2;
+	color: white;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+
+.footer-above-details span {
+	color: red;
+	text-decoration: underline;
+}
+
+.footer-above-details a {
+	color: white;
+	text-decoration: underline;
+}
+
+.footer-above-details a.sign-up {
+	color: red;
+}
+
+/* Giving hover effect ot sign up */
+.footer-above-details a.sign-up:hover {
+	color: #a71308;
+}
+
+/* Giving hover effect to read more */
+a.read-more:hover {
+	color: red;
+}
+/*  ************* Footer Above Section Ends ****************** */
+
+/*  ************* Footer Section *************** */
+ul.d-flex li {
+	font-weight: 500;
+}
+
+ul.d-flex li a {
+	color: #000000;
+	font-family: "Libre Baskerville", serif;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+ul.d-flex li a:hover {
+	color: #a71308;
+}
+
+/* Giving A little margin left to the first star */
+.star-margin {
+	margin-left: 10px;
+}
+
+/* Giving A little margin left to the facebook icon */
+.facebook-margin {
+	margin-left: 10px;
+}
+
+/* Styling Rate Us span */
+p.star span {
+	font-weight: 500;
+}
+
+/* Styling Follow Us on span */
+p.fa-in-tw span {
+	font-weight: 500;
+}
+
+/* Making facebook instagram twitter and contact icons a little bit bigger */
+.fa-in-tw i {
+	font-size: 1.4em;
+}
+.contact-icon i {
+	font-size: 1.4em;
+}
+
+/* Styling Contact Information */
+div.contact-icon {
+	padding-top: 20px;
+	padding-left: 30px;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+/* Styling Copyright Division */
+.copyright {
+	color: black;
+	font-family: "Libre Baskerville", serif;
+}
+/*  ************* Footer Section Ends *************** */
