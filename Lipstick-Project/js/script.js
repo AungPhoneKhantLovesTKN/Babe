@@ -37,5 +37,5 @@ $(document).ready(function () {
 });
 
 $(window).on("load", function () {
-	$(".loader-container").fadeOut(1500);
+	$(".loader-container").fadeOut(1000);
 });
